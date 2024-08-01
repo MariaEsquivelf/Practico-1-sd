@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
             tooltip: {
                 callbacks: {
                     label: function(tooltipItem) {
-                        return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                        const total = income + expense;
+                        const percentage = ((tooltipItem.raw / total) * 100).toFixed(2);
+                        return tooltipItem.label + ': ' + percentage + '%';
                     }
                 }
             }

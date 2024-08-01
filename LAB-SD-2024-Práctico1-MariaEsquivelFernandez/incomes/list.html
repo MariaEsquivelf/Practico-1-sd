@@ -1,55 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="list.js" defer></script>
-    <link rel="stylesheet" href="../globalStyle.css">
-    <script src="script.js" defer></script>
-    <title>Incomes</title>
-</head>
-<body>
-    <nav>
-        <a href="/LAB-SD-2024-Práctico1-MariaEsquivelFernandez/balances/index.html">Balance</a>
-        <a href="/LAB-SD-2024-Práctico1-MariaEsquivelFernandez/expenses/list.html">Gastos</a>
-        <a href="/LAB-SD-2024-Práctico1-MariaEsquivelFernandez/incomes/list.html">Ingresos</a>
-    </nav>
-    <div class="header">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../globalStyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-        <h2>Lista de ingresos</h2>
-        <button id="add">Agregar</button>
-    </div>
-    <div class="container">
+        <script src="script.js" defer></script>
+        <title>Incomes</title>
+    </head>
+    <body>
+        <nav>
+            <a href="../index.html">Balance</a>
+            <a href="../expenses/list.html">Gastos</a>
+            <a href="list.html">Ingresos</a>
+        </nav>
+        <div class="header">
 
-
-        <table  id="incomeTable">
-            
-            <tr >
-                <th>Concepto</th>
-                <th>Monto</th>
-            </tr>
-            
-        </table>
-    </div>
-
-
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form class="form">
-                <h2>Agregar ingreso</h2>
-                <div>
-                    <label for="concept">Concepto:</label>
-                    <input type="text" id="concept" name="concept" required>
-                </div>
-                <div>
-                    <label for="amount">Monto:</label>
-                    <input type="number" id="amount" name="amount" required>
-                </div>
-                <button type="submit">Agregar</button>
-            </form>
+            <h2>Lista de ingresos</h2>
+            <button id="add">Agregar</button>
         </div>
-    </div>
+        <div class="container">
 
-</body>
-</html>
+
+            <table  id="incomeTable">
+                <thead>
+                    <tr >
+                        <th>Concepto</th>
+                        <th>Monto</th>
+                        <th></th>
+                    </tr>
+                    
+                </thead>
+                <tbody></tbody>
+            
+            </table>
+        </div>
+
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form class="form">
+                    <h2>Agregar ingreso</h2>
+                    <div>
+                        <label for="concept">Concepto:</label>
+                        <input type="text" id="concept" name="concept" required>
+                    </div>
+
+                    <div>
+                        <label for="amount">Monto:</label>
+                        <input type="number" id="amount" name="amount" required>
+                    </div>
+                    <span id="error" style="display: none;"></span>
+
+                    <button type="submit">Agregar</button>
+
+                </form>
+            </div>
+        </div>
+
+    </body>
+    </html>

@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+ 
+    font-family: 'Roboto', sans-serif;
+  
 }
 
 nav {
@@ -8,9 +11,9 @@ nav {
 	color: rgb(255, 255, 255);
 	font-size: 1.5em;
 	text-align: center;
-	padding: 30px;
+	padding: 1rem;
 	list-style: none;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 nav a {
 	text-decoration: none;
@@ -62,21 +65,29 @@ button:hover{
  }
 table th, table td {
     padding: 12px 15px;
-    text-align: left;
+    text-align: center;
 }
 
 table th {
-    background-color: #c3daff;
+    background-color: #eaf2ff;
     color: rgb(73, 73, 73);
     text-transform: uppercase;
 }
 
 table tr:nth-child(even) {
-    background-color: #f7feff;
+    background-color: #fcffff;
 }
 
 table tr:hover {
-    background-color: #eef6f7;
+    background-color: #fcffff;
+}
+.delete {
+  background-color: rgb(251, 224, 224);
+  border: none;
+  cursor: pointer;
+}
+.delete:hover {
+  background-color: rgb(240, 187, 187);
 }
 
 
@@ -117,32 +128,67 @@ table tr:hover {
     cursor: pointer;
 }
 
-.form div {
-    margin-bottom: 15px;
-    
-}
 
-.form label {
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
+    color: rgb(57, 57, 57);
+  }
+  
+  .form div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .form label {
     display: block;
     margin-bottom: 5px;
-    
-}
-
-.form input {
+    color: rgb(57, 57, 57);
+    font-weight: bold;
+  }
+  
+  .form input {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-.form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    font-size: 1em;
+    margin-top: 5px;
+  }
+  
+  .form input:focus {
+    border-color: rgb(24, 128, 202);
+    outline: none;
+    box-shadow: 0 0 5px rgba(24, 128, 202, 0.5);
+  }
+  
+  .form button {
     background-color: rgb(7, 97, 161);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    width: 10em;
-}
-
-.form button:hover {
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .form button:hover {
     background-color: rgb(13, 79, 127);
-}
+  }
+  
+  #error {
+    display: none;
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+    text-align: center;
+  }

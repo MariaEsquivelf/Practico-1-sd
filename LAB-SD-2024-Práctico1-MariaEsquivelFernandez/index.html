@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="globalStyle.css"> 
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"     defer></script>
+    <script src="./balances/chart.js" defer></script>
+
+</head>
+<body>
+    <nav>
+        <a href="index.html   ">Balance</a>
+        <a href="expenses/list.html">Gastos</a>
+        <a href="incomes/list.html">Ingresos</a>
+    </nav>
+    <div class="balanceContainer">
+        <div class="group">
+            <div class="cardsContainer">
+                <div class="card">
+                    <h2>Ingresos</h2>
+                    <div>
+                        <h3 id="income">0</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Egresos</h2>
+                        <h3 id="expense">0</h3>
+                </div> 
+                
+            </div>
+            <div class="card" id="balanceCard">
+                <h2>Balance</h2>
+                <div>
+                    <h3 id="balance">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="graphicContainer">
+            <div style="width: 300px; height: 300px; margin-top: 20px;">
+                <canvas id="myPieChart"></canvas>
+            </div>
+           
+        </div>
+    </div>
+   
+</body>
+</html>
