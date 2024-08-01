@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="list.js" defer></script>
+    <link rel="stylesheet" href="../globalStyle.css">
+    <script src="script.js" defer></script>
+    <title>Expenses</title>
+</head>
+<body>
+    <div class="header">
+
+        <h2>Lista de egresos</h2>
+        <button id="add">Agregar</button>
+    </div>
+    <div class="container">
+
+
+        <table>
+            
+            <tr >
+                <th>Concepto</th>
+                <th>Monto</th>
+            </tr>
+            
+        </table>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="form">
+                <h2>Agregar ingreso</h2>
+                <div>
+                    <label for="concept">Concepto:</label>
+                    <input type="text" id="concept" name="concept" required>
+                </div>
+                <div>
+                    <label for="amount">Monto:</label>
+                    <input type="number" id="amount" name="amount" required>
+                </div>
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

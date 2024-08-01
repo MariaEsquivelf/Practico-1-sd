@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+	background-color: rgb(24, 128, 202);
+	color: rgb(255, 255, 255);
+	font-size: 1.5em;
+	text-align: center;
+	padding: 30px;
+	list-style: none;
+    margin-bottom: 2rem;
+}
+nav a {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	margin: 0;
+    border-radius: 10px;
+    background-color: rgb(37, 137, 209);
+    margin: 20px;
+
+}
+nav a:hover {
+	background-color: rgb(28, 119, 184);
+}
+
+.header{
+    display: flex;  
+    justify-content: space-around;
+    color: rgb(57, 57, 57);
+
+}
+button{
+    background-color: rgb(7, 97, 161);
+    color: rgb(255, 255, 255);
+    padding:  10px;
+     border: none;
+     border-radius: 10px;
+     font-size:  1em;
+
+
+}
+
+button:hover{
+  background-color: rgb(28, 119, 184);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ table{
+    width: 70vw;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+ }
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #c3daff;
+    color: rgb(73, 73, 73);
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f7feff;
+}
+
+table tr:hover {
+    background-color: #eef6f7;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form div {
+    margin-bottom: 15px;
+    
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+.form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.form button {
+    background-color: rgb(7, 97, 161);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 10em;
+}
+
+.form button:hover {
+    background-color: rgb(13, 79, 127);
+}

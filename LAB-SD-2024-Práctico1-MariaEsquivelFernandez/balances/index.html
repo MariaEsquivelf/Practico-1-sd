@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"     defer></script>
+    <script src="chart.js" defer></script>
+
+</head>
+<body>
+    <nav>
+        <a href="/LAB-SD-2024-Práctico1-MariaEsquivelFernandez/balances/index.html">Balance</a>
+        <a href="/LAB-SD-2024-Práctico1-MariaEsquivelFernandez/expenses/list.html">Gastos</a>
+        <a href="/LAB-SD-2024-Práctico1-MariaEsquivelFernandez/incomes/list.html">Ingresos</a>
+    </nav>
+    <div class="container">
+        <div class="cardsContainer">
+
+            <div class="card">
+                <h2>Ingresos</h2>
+                <div>
+                    <h3 id="income">0</h3>
+                    <a href="/LAB-SD-2024-Práctico1-MariaEsquivelFernandez/incomes/index.html">Agregar</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Egresos</h2>
+                    <h3 id="expense">0</h3>
+                    <a href="/LAB-SD-2024-Práctico1-MariaEsquivelFernandez/expenses/index.html">Agregar</a>
+            </div>
+           
+            
+        </div>
+        <div class="cardsContainer">
+            <div style="width: 300px; height: 300px;">
+                <canvas id="myPieChart"></canvas>
+            </div>
+            <div class="card">
+                <h2>Balance</h2>
+                <div>
+                    <h3 id="balance">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
